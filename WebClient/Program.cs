@@ -6,11 +6,16 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace WebClient
+namespace WebClientAddtion
 {
-	class Program
+	public class Program
 	{
 		static void Main(string[] args)
+		{
+			WebAddition(args);
+		}
+
+		public static void WebAddition(string[] args)
 		{
 			string responseString;
 			string portInput;
@@ -47,7 +52,7 @@ namespace WebClient
 				UriBuilder myUri = new UriBuilder("http", "localhost", portNumber);
 				listener.Prefixes.Add(myUri.ToString());
 				listener.Start();
-				
+
 
 				// The GetContext method blocks while waiting for a request.
 				HttpListenerContext context = listener.GetContext();
@@ -67,7 +72,7 @@ namespace WebClient
 					Console.WriteLine(responseString);
 					throw e;
 				}
-				
+
 
 				// Get a response stream and write the response to it.
 				byte[] buffer = Encoding.UTF8.GetBytes(responseString);
@@ -79,7 +84,7 @@ namespace WebClient
 				output.Close();
 				listener.Stop();
 			}
-
+		
 		}
 	}
 }

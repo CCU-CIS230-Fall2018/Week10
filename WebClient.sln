@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{37101E6E-4F46-4BA7-91F6-5C5A723BDA51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClientAddtion", "WebClient\WebClientAddtion.csproj", "{37101E6E-4F46-4BA7-91F6-5C5A723BDA51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClientTests", "WebClientTests\WebClientTests.csproj", "{879A74B1-7D23-48B3-858D-890F34CB8F71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{37101E6E-4F46-4BA7-91F6-5C5A723BDA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37101E6E-4F46-4BA7-91F6-5C5A723BDA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37101E6E-4F46-4BA7-91F6-5C5A723BDA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{879A74B1-7D23-48B3-858D-890F34CB8F71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{879A74B1-7D23-48B3-858D-890F34CB8F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{879A74B1-7D23-48B3-858D-890F34CB8F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{879A74B1-7D23-48B3-858D-890F34CB8F71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
