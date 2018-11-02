@@ -11,7 +11,7 @@ namespace Week10Networking
 {
         public class MyWebServer
     {
-        public async static void ListenForResponseAsync(int portNumber)
+        public async static void WebServerInnitialize(int portNumber)
         {
             var uri = new UriBuilder("http", "localhost", portNumber);
 

@@ -18,7 +18,7 @@ namespace Week10Networking
             if (Regex.IsMatch(userInput, @"^\d{4}$"))
             {
                 var port = Convert.ToInt32(userInput);
-                MyWebServer.ListenForResponseAsync(port);
+                MyWebServer.WebServerInnitialize(port);
 
                 Console.WriteLine($"webServer innitialized on port{port}.");
                 Console.WriteLine("Head to the browser to make calculations");
